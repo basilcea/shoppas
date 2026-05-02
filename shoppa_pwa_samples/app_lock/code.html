@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shoppa - Security Lock</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-fixed-dim": "#adcdc5",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-container": "#c6e7de",
+                        "tertiary": "#723521",
+                        "tertiary-container": "#8f4c36",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "background": "#f8f9fa",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#00201b",
+                        "on-primary-container": "#95e8d8",
+                        "secondary": "#46645e",
+                        "on-secondary-fixed": "#01201b",
+                        "on-tertiary-fixed-variant": "#723521",
+                        "on-background": "#191c1d",
+                        "on-tertiary-container": "#ffcebf",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-secondary-container": "#4b6862",
+                        "primary-container": "#006b5e",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "outline": "#6e7976",
+                        "on-surface-variant": "#3e4946",
+                        "primary": "#005147",
+                        "surface-tint": "#006b5e",
+                        "inverse-primary": "#83d5c5",
+                        "primary-fixed": "#9ff2e1",
+                        "secondary-fixed": "#c9e9e1",
+                        "primary-fixed-dim": "#83d5c5",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#2f4c46",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#bec9c5",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#005046",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    "boxShadow": {
+                        "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface flex items-center justify-center min-h-screen">
+<div class="w-full max-w-md min-h-screen flex flex-col items-center justify-between py-16 px-8 relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[40%] bg-gradient-to-b from-primary/5 to-transparent rounded-full blur-3xl -z-10"></div>
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-xl flex items-center justify-center shadow-ambient">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="space-y-2">
+<h1 class="text-emerald-900 font-headline font-extrabold text-2xl tracking-tighter">Shoppa</h1>
+<p class="text-on-surface-variant font-medium">Security Required</p>
+</div>
+<div class="flex space-x-4 mt-8">
+<div class="w-4 h-4 rounded-full border-2 border-primary-container bg-transparent"></div>
+<div class="w-4 h-4 rounded-full border-2 border-primary-container bg-transparent"></div>
+<div class="w-4 h-4 rounded-full border-2 border-primary-container bg-transparent"></div>
+<div class="w-4 h-4 rounded-full border-2 border-primary-container bg-transparent"></div>
+</div>
+</div>
+<div class="w-full grid grid-cols-3 gap-y-6 gap-x-4 max-w-[280px]">
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">1</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">2</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">3</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">4</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">5</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">6</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">7</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">8</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">9</button>
+<div class="flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-icon="fingerprint">fingerprint</span>
+</div>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-xl font-headline font-bold text-emerald-900 hover:bg-surface-container-high transition-colors active:scale-90">0</button>
+<button class="w-16 h-16 flex items-center justify-center rounded-full text-on-surface-variant hover:text-error transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="backspace">backspace</span>
+</button>
+</div>
+<div class="flex flex-col items-center space-y-4">
+<button class="text-sm font-semibold text-primary hover:text-primary-container transition-colors tracking-wide">
+                Forgot PIN?
+            </button>
+<div class="flex items-center space-x-2 px-4 py-2 bg-surface-container-low rounded-full">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-xs font-medium text-on-surface-variant uppercase tracking-widest">Awaiting Biometrics</span>
+</div>
+</div>
+</div>
+<div class="hidden md:flex fixed right-8 bottom-8 flex-col items-end space-y-4 pointer-events-none">
+<div class="bg-surface-container-lowest shadow-ambient p-6 rounded-xl max-w-xs border-l-4 border-primary">
+<h3 class="font-headline font-bold text-emerald-900 text-sm mb-2">Security Advice</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Shoppa will never ask for your PIN via email or text message. Always ensure you are on the official app before entering credentials.</p>
+</div>
+</div>
+</body></html>

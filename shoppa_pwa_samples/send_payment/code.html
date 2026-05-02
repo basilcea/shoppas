@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Send Payment - Digital Concierge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#83d5c5",
+                        "surface-container-high": "#e7e8e9",
+                        "on-primary-fixed-variant": "#005046",
+                        "primary": "#005147",
+                        "on-surface-variant": "#3e4946",
+                        "tertiary": "#723521",
+                        "surface-tint": "#006b5e",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed": "#390b00",
+                        "surface-variant": "#e1e3e4",
+                        "on-primary-fixed": "#00201b",
+                        "on-tertiary-container": "#ffcebf",
+                        "on-surface": "#191c1d",
+                        "on-primary-container": "#95e8d8",
+                        "surface-dim": "#d9dadb",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed": "#01201b",
+                        "inverse-primary": "#83d5c5",
+                        "primary-fixed": "#9ff2e1",
+                        "on-secondary-container": "#4b6862",
+                        "background": "#f8f9fa",
+                        "on-primary": "#ffffff",
+                        "outline": "#6e7976",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#c6e7de",
+                        "surface-container": "#edeeef",
+                        "secondary-fixed-dim": "#adcdc5",
+                        "primary-container": "#006b5e",
+                        "on-tertiary-fixed-variant": "#723521",
+                        "on-secondary-fixed-variant": "#2f4c46",
+                        "secondary": "#46645e",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-container": "#8f4c36",
+                        "tertiary-fixed": "#ffdbd0",
+                        "secondary-fixed": "#c9e9e1",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-bright": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1d",
+                        "outline-variant": "#bec9c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+        .shadow-ambient { box-shadow: 0 20px 40px rgba(25, 28, 29, 0.06); }
+        .glass-header { backdrop-filter: blur(20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md h-16 flex justify-between items-center px-6">
+<div class="flex items-center gap-4">
+<button class="p-2 -ml-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-50">arrow_back</span>
+</button>
+<h1 class="font-manrope font-extrabold tracking-tight text-emerald-900 dark:text-emerald-50 text-lg">Send Payment</h1>
+</div>
+<div class="h-8 w-8 rounded-full bg-emerald-100 flex items-center justify-center overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="professional male headshot with friendly expression on clean minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa-4-wNiUx1VHoNPqEGTmcS-LJo_Bnb9uQTBEM9qbIFF9ytaSyAWHACKPNyyoEZWwl9_glmAVHix2CuvndLkIN3A5mYjqZFWVVMM7LaLfhJGX7hywCTfSPvkSWFaDg6s6A-riI25LLW9v6MeqvT-xfgq3GBUZ-XZeAr3KMSz9ZU6T492qFG69kNvNWMaYrxAMpuwYJS-4xn--3_Wp_WA6Pr5_NSPbiabNA7GekibQP6hQj0XeMtDUroBUgOK0-tFo99xur801TdiYN"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-lg mx-auto space-y-8">
+<!-- Summary Section (Tonal Layering) -->
+<section class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Order Total</span>
+<span class="font-headline font-bold text-on-surface">$120.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Service Fee (5%)</span>
+<span class="font-headline font-bold text-on-surface">$6.00</span>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/15 flex justify-between items-center">
+<span class="text-on-surface font-semibold">Total Amount</span>
+<span class="font-headline font-extrabold text-2xl text-primary">$126.00</span>
+</div>
+</section>
+<!-- Payment Method Selection -->
+<section class="space-y-4">
+<h2 class="font-headline font-bold text-lg px-1">Select Payment Method</h2>
+<div class="grid gap-3">
+<!-- MoMo -->
+<label class="group relative flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl cursor-pointer shadow-ambient ring-2 ring-transparent transition-all hover:ring-primary/20">
+<input checked="" class="sr-only peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center overflow-hidden">
+<img class="h-8 w-8 object-contain" data-alt="colorful abstract logo for mobile money service with vibrant yellow and blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNvOZlHDx5-wnAjqlWd2Dt8HzlmmKKHPOmKiKqXFd6EIgspuoR0V2MdLqeuAiOAzdfNCEn6XB0mY6D9rhqMlnBgSY-D1NdPWTlm3DHi75UqHlb7JXBmXFna4PJBg0el3dUu5W0et1Tm0eUn1GMW6rcOCzEm9lXnG5l2oLB8G0uzuGduqOCtNFlKOehaQv6RhM6WgEFacuu9VpassKzd7xNJ5-ary7Dm9JgDc0LlzgCk1PKSMBDG3mAFc1-SZKWrBRa4dDhChMvOUD6"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">MoMo</p>
+<p class="text-xs text-on-surface-variant">Instant Mobile Transfer</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+<div class="absolute inset-0 rounded-xl peer-checked:ring-2 ring-primary pointer-events-none"></div>
+</label>
+<!-- Paystack -->
+<label class="group relative flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl cursor-pointer shadow-ambient ring-2 ring-transparent transition-all hover:ring-primary/20">
+<input class="sr-only peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center overflow-hidden">
+<img class="h-8 w-8 object-contain" data-alt="modern minimalist tech logo for paystack featuring clean geometric blue shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWgMUfCkoleH_neHa9L_uUv9j3MEx0Mrn0wfud6CSEY9TCgq5tEsqwJTl1DKtzQ2RrO-GPlNc5654hSeqwICx7h6ODlVq-zF6zeGloO25MQ54fTWYehjvVEYSuB6nWj_w5VQMRbP5uRBDq5KXKG49CH85bf17G72ec1pH_vDlc6ghaRHJkZ_Dk2Af-rw91ArzPUM8FYa_vbCzW6KFSE0CHXUZt4cb2f1hRy_iTF6SbIwKrLdyZwsTnBsqTO2HbX62bANQIeR6-bGj8"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Paystack</p>
+<p class="text-xs text-on-surface-variant">Card and Bank Transfer</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+<div class="absolute inset-0 rounded-xl peer-checked:ring-2 ring-primary pointer-events-none"></div>
+</label>
+<!-- Stripe -->
+<label class="group relative flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl cursor-pointer shadow-ambient ring-2 ring-transparent transition-all hover:ring-primary/20">
+<input class="sr-only peer" name="payment" type="radio"/>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center overflow-hidden">
+<img class="h-8 w-8 object-contain" data-alt="sleek modern stripe logo with violet and indigo gradient shades" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXHXoSZVBB2u8djKf8b27y3Td_Hpc6k4C04C6P04t4alSSBu_QExvCKolMetKtNqZ8IHVTztTJghuXA0S4xuUIQzNtC7wW1O9HeLHQ-34CbaDJe6CXBNSeR3JolXoPI3g0AjJWosKReLfMD5qFE7pymbUaVL0onDZcavZOEe3i_MESFDVzDNxZMZJ_mR2_Fh_hOP_Y6a-wNYIBg0-xD08wJ8xncS98jYys92q32AbTeQHSHqOndsY0HSnUsmA6JfWQzyQcsikhgowK"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Stripe</p>
+<p class="text-xs text-on-surface-variant">International Credit Cards</p>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+<div class="absolute inset-0 rounded-xl peer-checked:ring-2 ring-primary pointer-events-none"></div>
+</label>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="pt-6">
+<button class="w-full h-14 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold text-lg rounded-xl shadow-ambient active:scale-[0.98] transition-transform flex items-center justify-center gap-2">
+<span>Pay Now</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center text-on-surface-variant text-xs mt-4">
+                Securely encrypted by SSL. Your payment information is never stored.
+            </p>
+</section>
+<!-- Status Sheet (Digital Concierge Branding) -->
+<div class="bg-tertiary-container/10 border border-tertiary-container/20 rounded-lg p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container">info</span>
+<p class="text-xs text-on-tertiary-fixed-variant leading-relaxed">
+                Paying through the concierge platform ensures your service guarantee and protection.
+            </p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[1.5rem] bg-white dark:bg-slate-900 shadow-ambient flex justify-around items-center px-4 pt-3 pb-6">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-800 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Shopping -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-800 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Shopping</span>
+</a>
+<!-- Clients -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-800 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Clients</span>
+</a>
+<!-- Chat (Active State per logic) -->
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-xl px-3 py-1.5 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Chat</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-emerald-800 transition-transform active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

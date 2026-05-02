@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface": "#191c1d",
+                    "outline": "#6e7976",
+                    "on-secondary-fixed": "#01201b",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-fixed": "#c9e9e1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#4b6862",
+                    "on-primary-container": "#95e8d8",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e7e8e9",
+                    "primary": "#005147",
+                    "on-tertiary-fixed": "#390b00",
+                    "on-secondary-fixed-variant": "#2f4c46",
+                    "primary-container": "#006b5e",
+                    "on-primary-fixed": "#00201b",
+                    "inverse-primary": "#83d5c5",
+                    "primary-fixed": "#9ff2e1",
+                    "surface-bright": "#f8f9fa",
+                    "tertiary-fixed-dim": "#ffb59e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#3e4946",
+                    "on-primary-fixed-variant": "#005046",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#83d5c5",
+                    "surface": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#c6e7de",
+                    "on-background": "#191c1d",
+                    "tertiary-container": "#8f4c36",
+                    "tertiary-fixed": "#ffdbd0",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#723521",
+                    "secondary": "#46645e",
+                    "secondary-fixed-dim": "#adcdc5",
+                    "tertiary": "#723521",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bec9c5",
+                    "surface-tint": "#006b5e",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#ffcebf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            },
+            "boxShadow": {
+                "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layering {
+            background: linear-gradient(180deg, rgba(248, 249, 250, 0) 0%, rgba(243, 244, 245, 1) 100%);
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-ambient">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-md mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a person in high-key studio lighting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaHnsSVZwxLGOUX4ryZuR-Y3faDIc3j-By6kCCxJFohusvn6721yUkpAPwtEkMQYYtZic0bVgkJZ7zr_tfGQ1cHECiQktQM54wRJpIg2QrAnfK_tiO9IFo_V1dFSNFqzCu852v0FiHHIS8U7ljBdFafMrI45WSOFfsw4JtAOSMkmgf5zNluqAN5J8w303BhAObHz_dxBc1GeTLlHyPzUAFptyVaZ-lzVU4rvxsz0Gr62BWrO-0QvIA7vctSe5OJO6IS6u2CD1fdkg5"/>
+</div>
+<span class="text-emerald-900 dark:text-emerald-400 text-xl font-extrabold tracking-tight">Shoppa</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-slate-500 hover:bg-slate-100 transition-colors rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined">sync</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="pt-20 px-4 max-w-md mx-auto">
+<!-- Status Notification Sheet -->
+<div class="mb-6 bg-tertiary-container/10 border-l-4 border-tertiary-container p-4 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container">info</span>
+<p class="text-sm font-medium text-tertiary-container font-body">Shortage Detected: Adjusting allocation for 3 clients.</p>
+</div>
+<!-- Product Summary Card (High-End Bento Style) -->
+<section class="grid grid-cols-2 gap-3 mb-8">
+<div class="col-span-2 bg-surface-container-lowest p-5 rounded-3xl shadow-ambient flex items-center gap-4">
+<div class="w-20 h-20 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="close-up studio photo of a cold organic glass milk bottle with water droplets against a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KLj0kL3aX84-ztJabDwwZu8WpXiVtPl_EUjoq_dAnhQnA7L1LpxMdF0s1MlJ4mS-UL0H8hu2OC36rAwulOObsMiAinX2C4NU1RfRhTUyzcJ219da2sG6QiL8NXfEo49_oSfpHdt1Lb0nnpQ788EK9PLgKDchmvBCGvwmbeG8Mluj8PfB9YKQYGSV_gaYjZgGPBq2fO1CI_M1y3bob8Q0HP4FnF1m97wfR-tXxcRtEI_08rR48BT51-UbM0APAp8_52IBjwhGbqof"/>
+</div>
+<div class="flex flex-col">
+<h2 class="text-on-surface font-headline font-bold text-lg leading-tight">Organic Whole Milk</h2>
+<span class="text-on-surface-variant font-label text-xs uppercase tracking-wider">3.8L • Grass Fed</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-3xl text-center">
+<span class="block text-on-surface-variant font-label text-[10px] uppercase tracking-widest mb-1">Requested</span>
+<span class="text-2xl font-black text-primary font-headline">12</span>
+</div>
+<div class="bg-primary p-4 rounded-3xl text-center">
+<span class="block text-primary-fixed font-label text-[10px] uppercase tracking-widest mb-1">Available</span>
+<span class="text-2xl font-black text-white font-headline">8</span>
+</div>
+</section>
+<!-- Allocation List -->
+<section class="space-y-4">
+<div class="flex justify-between items-center mb-2 px-1">
+<h3 class="font-headline font-bold text-lg text-primary">Client Allocation</h3>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] px-2 py-1 rounded-full font-bold uppercase">Auto-Scaled</span>
+</div>
+<!-- Client Row 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-3xl shadow-ambient">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">person</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Sarah J.</p>
+<p class="text-xs text-on-surface-variant font-body">Requested: 4</p>
+</div>
+</div>
+<!-- Manual Override Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-2xl p-1 gap-1">
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-on-surface font-headline">3</span>
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4 rounded-full"></div>
+</div>
+</div>
+<!-- Client Row 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-3xl shadow-ambient">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">person</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Marcus T.</p>
+<p class="text-xs text-on-surface-variant font-body">Requested: 4</p>
+</div>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-2xl p-1 gap-1">
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-on-surface font-headline">3</span>
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4 rounded-full"></div>
+</div>
+</div>
+<!-- Client Row 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-3xl shadow-ambient">
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">person</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Elena R.</p>
+<p class="text-xs text-on-surface-variant font-body">Requested: 4</p>
+</div>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-2xl p-1 gap-1">
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-on-surface font-headline">2</span>
+<button class="w-8 h-8 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/2 rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar (Transactional Suppression Context) -->
+<!-- We suppress BottomNavBar as this is a focused task. Using a persistent primary CTA instead -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-lowest/90 backdrop-blur-lg px-4 pt-4 pb-8 border-t border-outline-variant/10 flex flex-col gap-4 max-w-md mx-auto left-1/2 -translate-x-1/2 z-50">
+<div class="flex justify-between items-center px-2">
+<span class="text-on-surface-variant font-body text-sm font-semibold">Total Allocated</span>
+<span class="text-primary font-headline font-black text-xl">8 / 8</span>
+</div>
+<button class="w-full h-14 bg-gradient-to-r from-primary to-primary-container text-white rounded-2xl font-headline font-bold text-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-all shadow-lg">
+            Confirm Allocation
+            <span class="material-symbols-outlined">check_circle</span>
+</button>
+</div>
+<!-- Hidden standard BottomNavBar to follow JSON but it's suppressed visually for focus -->
+<nav class="hidden">
+<div class="icons">home_app_logo, shopping_cart, group, analytics, person</div>
+</nav>
+</body></html>

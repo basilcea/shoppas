@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface": "#191c1d",
+                    "outline": "#6e7976",
+                    "on-secondary-fixed": "#01201b",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-fixed": "#c9e9e1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#4b6862",
+                    "on-primary-container": "#95e8d8",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e7e8e9",
+                    "primary": "#005147",
+                    "on-tertiary-fixed": "#390b00",
+                    "on-secondary-fixed-variant": "#2f4c46",
+                    "primary-container": "#006b5e",
+                    "on-primary-fixed": "#00201b",
+                    "inverse-primary": "#83d5c5",
+                    "primary-fixed": "#9ff2e1",
+                    "surface-bright": "#f8f9fa",
+                    "tertiary-fixed-dim": "#ffb59e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#3e4946",
+                    "on-primary-fixed-variant": "#005046",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#83d5c5",
+                    "surface": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#c6e7de",
+                    "on-background": "#191c1d",
+                    "tertiary-container": "#8f4c36",
+                    "tertiary-fixed": "#ffdbd0",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#723521",
+                    "secondary": "#46645e",
+                    "secondary-fixed-dim": "#adcdc5",
+                    "tertiary": "#723521",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bec9c5",
+                    "surface-tint": "#006b5e",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#ffcebf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "md": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            },
+            "boxShadow": {
+                "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { min-height: max(884px, 100dvh); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md shadow-ambient">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-md mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-secondary-container">
+<img alt="User profile photo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbatNRJc5jGNqx3kZ_ILkf3dCE-sSgwttztTZeVtDpp4nyhg1SjVUhHxk8laoXYDaQo1NPAdeIPLaoMlO65G52K6WkA66q-vKLYMatA1YUo1fsyrD17ty_KJGgGl9UNFVa4nVFlLSxc1W4gVxtfV7i1y5qU2kbHE89HjdSlLNpkKli-1aRHSzs6tHBaY2D-OXMYI-n1aWzpcnJn81xfoZeqD5W4cWKtg_H9hV2K8GTpC0UKs7QKdKOQOeEDP4aBLxZDT9wSMiIhicY"/>
+</div>
+<span class="text-emerald-900 dark:text-emerald-400 font-manrope font-extrabold text-xl tracking-tight">Shoppa</span>
+</div>
+<button class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">sync</span>
+</button>
+</div>
+</header>
+<main class="max-w-md mx-auto pt-24 px-6 space-y-8">
+<!-- Page Title -->
+<div class="space-y-1">
+<h1 class="text-3xl font-headline font-extrabold text-on-surface">Shopper Mode</h1>
+<p class="text-on-surface-variant text-sm font-medium">Manage your session availability and client capacity.</p>
+</div>
+<!-- Global Session Toggle -->
+<section class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<div class="flex items-center justify-between">
+<div class="space-y-1">
+<h2 class="text-lg font-headline font-bold text-primary">Accepting New Orders</h2>
+<p class="text-xs text-on-surface-variant">Switch on to start appearing in local search.</p>
+</div>
+<button class="relative inline-flex h-8 w-14 items-center rounded-full bg-primary-container transition-colors focus:outline-none">
+<span class="translate-x-7 inline-block h-6 w-6 transform rounded-full bg-white transition-transform"></span>
+</button>
+</div>
+</section>
+<!-- Session Creation Section -->
+<section class="space-y-4">
+<h3 class="px-2 text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Schedule New Session</h3>
+<div class="grid grid-cols-1 gap-4">
+<!-- Shopping Session Picker -->
+<div class="bg-surface-container-lowest shadow-ambient rounded-xl p-6 border-l-4 border-primary">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Shopping Session</label>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-4 rounded-md cursor-pointer hover:bg-surface-container transition-colors">
+<div>
+<span class="text-lg font-bold">Friday, May 24th</span>
+<span class="block text-sm text-outline font-medium">Starts at 09:00</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">calendar_month</span>
+</div>
+</div>
+<!-- Linked Order Window -->
+<div class="bg-surface-container-low rounded-xl p-6 space-y-4 border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">assignment_turned_in</span>
+<div class="space-y-0.5">
+<h3 class="font-headline font-bold">Order Window</h3>
+<p class="text-[10px] text-outline font-bold uppercase">Deadline for list submission</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-md flex items-center justify-between shadow-sm">
+<div>
+<span class="text-lg font-bold">Thursday, May 23rd</span>
+<span class="block text-sm text-error font-semibold uppercase text-[11px]">Closes at 18:00</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">timer</span>
+</div>
+<p class="text-[11px] text-on-surface-variant italic">Clients see this deadline when viewing your profile.</p>
+</div>
+</div>
+</section>
+<!-- Session Capacity -->
+<section class="space-y-4">
+<div class="bg-surface-container-lowest shadow-ambient rounded-xl p-6 border-b-2 border-primary">
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant mb-4">Max Clients for Session</label>
+<div class="flex items-center justify-between">
+<button class="w-12 h-12 flex items-center justify-center bg-secondary-container rounded-md text-on-secondary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<div class="text-center">
+<span class="text-4xl font-headline font-black text-primary">04</span>
+<span class="block text-[10px] text-outline font-bold uppercase mt-1">Slots Available</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center bg-secondary-container rounded-md text-on-secondary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Preferences List -->
+<section class="space-y-2">
+<h3 class="px-2 text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Store Preferences</h3>
+<div class="bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden">
+<div class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-10 h-10 bg-secondary-container rounded-md flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Preferred Grocers</p>
+<p class="text-xs text-outline">Whole Foods, Trader Joe's +2</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="w-10 h-10 bg-secondary-container rounded-md flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Delivery Radius</p>
+<p class="text-xs text-outline">5.0 miles from Downtown Core</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Save Action -->
+<button class="w-full h-14 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold rounded-xl shadow-lg active:scale-[0.98] transition-transform">
+            Save Operational State
+        </button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-2 pb-6 pt-2 bg-slate-50 dark:bg-slate-900 rounded-t-3xl shadow-ambient z-50">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Shopping</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Data</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-100 rounded-2xl px-3 py-1.5 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>
