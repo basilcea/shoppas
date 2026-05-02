@@ -91,12 +91,6 @@ export default function Privacy() {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-md">
-        <div className="bg-tertiary-container/90 backdrop-blur-md p-4 rounded-xl flex items-center justify-between shadow-ambient">
-          <div className="flex items-center gap-3"><div className="w-2 h-2 bg-on-tertiary-container rounded-full animate-pulse" /><p className="text-xs font-bold text-on-tertiary-container">Strict Data Processing Policy in Effect</p></div>
-          <button className="text-on-tertiary-container/60 hover:text-on-tertiary-container transition-colors"><span className="material-symbols-outlined text-sm">close</span></button>
-        </div>
-      </div>
     </div>
   )
 }
