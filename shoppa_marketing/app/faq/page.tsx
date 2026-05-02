@@ -4,7 +4,7 @@ import { useState } from 'react'
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
-  const toggle = (index) => {
+  const toggle = (index: any) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
