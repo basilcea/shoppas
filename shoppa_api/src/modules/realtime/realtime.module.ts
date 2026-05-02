@@ -1,7 +1,0 @@
-import { Module } from '@nestjs/common'
-import { RealtimeService } from './realtime.service'
-import { RealtimeController } from './realtime.controller'
-import { AuthModule } from '../auth/auth.module'
-
-@Module({ imports: [AuthModule], providers: [RealtimeService], controllers: [RealtimeController] })
-export class RealtimeModule {}
