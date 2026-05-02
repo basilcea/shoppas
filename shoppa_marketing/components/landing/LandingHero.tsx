@@ -3,10 +3,6 @@ export default function LandingHero() {
     <section className="px-6 py-16 md:py-32 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-wider">
-            <span className="material-symbols-outlined text-sm">bolt</span>
-            Operational Excellence
-          </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight font-headline">
             The Operating Platform for <span className="text-primary">Personal Shoppers</span>.
           </h1>

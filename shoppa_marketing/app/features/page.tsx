@@ -2,7 +2,6 @@ export default function Features() {
   return (
     <main className="pt-0">
       <section className="max-w-7xl mx-auto px-6 py-20 text-center">
-        <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-wider mb-6">Operational Excellence</span>
         <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-on-surface tracking-tight mb-8 leading-[1.1]">Platform <span className="text-primary">Features</span></h1>
         <p className="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-body leading-relaxed mb-12">The Operating Platform for Personal Shoppers. Everything you need to scale your business, manage clients, and optimize your fulfillment flow.</p>
         <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-ambient bg-surface-container-low group">
