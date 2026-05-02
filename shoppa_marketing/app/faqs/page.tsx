@@ -94,7 +94,7 @@ export default function FAQ() {
        
       <section className="max-w-7xl mx-auto px-6 py-20 text-center">
         <h1 className="font-headline font-extrabold text-5xl md:text-6xl py-10 text-on-surface tracking-tight mb-8 leading-[1.1]">Frequently Asked <span className="text-primary">Questions</span></h1>
-        <div className="max-w-4xl mx-auto text-center py-16 px-8 rounded-xxl hero-gradient text-on-primary shadow-xl relative overflow-hidden">
+        <div className="max-w-7xl mx-auto text-center py-16 px-8 rounded-xxl hero-gradient text-on-primary shadow-xl relative overflow-hidden">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
               How can we help?
@@ -113,7 +113,7 @@ export default function FAQ() {
       </section>
 
       {/* ACCORDION */}
-      <section className="max-w-5xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto px-6">
         <div className="space-y-4">
           {items.map((item, index) => {
             const isOpen = openIndex === index
@@ -159,7 +159,7 @@ export default function FAQ() {
           })}
         </div>
       </section>
-        <section className="max-w-4xl mx-auto px-6 my-20">
+        <section className="max-w-7xl mx-auto px-6 my-20">
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           <div className="flex-1 bg-surface-container-high rounded-xxl p-10 flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-emerald-900 mb-4">Still have questions?</h2>
