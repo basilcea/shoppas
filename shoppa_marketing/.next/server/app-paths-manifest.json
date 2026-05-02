@@ -1,8 +1,8 @@
 {
-  "/privacy/page": "app/privacy/page.js",
-  "/terms/page": "app/terms/page.js",
-  "/faq/page": "app/faq/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/features/page": "app/features/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/faqs/page": "app/faqs/page.js",
+  "/features/page": "app/features/page.js",
+  "/terms/page": "app/terms/page.js"
 }

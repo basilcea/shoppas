@@ -37,7 +37,7 @@ export default function NavBar() {
       {open && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-4 font-headline font-semibold bg-white/90 backdrop-blur">
           <Link href="/features" onClick={() => setOpen(false)}>Features</Link>
-          <Link href="/faq" onClick={() => setOpen(false)}>FAQ</Link>
+          <Link href="/faqs" onClick={() => setOpen(false)}>Faqs</Link>
           <Link href="#" className="btn-gradient text-on-primary px-4 py-2 rounded-full text-center">
             Download App
           </Link>
