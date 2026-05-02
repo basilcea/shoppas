@@ -3,10 +3,6 @@ export default function Terms() {
     <main className="pt-0 px-6">
       <div className="max-w-4xl mx-auto pt-16 pb-20">
         <header className="mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container mb-6">
-            <span className="material-symbols-outlined text-sm">gavel</span>
-            <span className="text-xs font-semibold tracking-wider uppercase font-label">Legal Framework</span>
-          </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 tracking-tight">Terms of Service</h1>
           <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Last Updated: May 2, 2026. Please read these terms carefully before using the Shoppas marketplace platform.</p>
         </header>
