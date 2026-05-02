@@ -1,1 +1,5 @@
 node_modules
+.vscode
+.kilo
+shoppa_marketing_samples/
+shoppa_pwa_samples/
