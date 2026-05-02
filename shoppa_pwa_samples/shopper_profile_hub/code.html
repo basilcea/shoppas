@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface": "#191c1d",
+                    "outline": "#6e7976",
+                    "on-secondary-fixed": "#01201b",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-fixed": "#c9e9e1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#4b6862",
+                    "on-primary-container": "#95e8d8",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e7e8e9",
+                    "primary": "#005147",
+                    "on-tertiary-fixed": "#390b00",
+                    "on-secondary-fixed-variant": "#2f4c46",
+                    "primary-container": "#006b5e",
+                    "on-primary-fixed": "#00201b",
+                    "inverse-primary": "#83d5c5",
+                    "primary-fixed": "#9ff2e1",
+                    "surface-bright": "#f8f9fa",
+                    "tertiary-fixed-dim": "#ffb59e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#3e4946",
+                    "on-primary-fixed-variant": "#005046",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#83d5c5",
+                    "surface": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#c6e7de",
+                    "on-background": "#191c1d",
+                    "tertiary-container": "#8f4c36",
+                    "tertiary-fixed": "#ffdbd0",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#723521",
+                    "secondary": "#46645e",
+                    "secondary-fixed-dim": "#adcdc5",
+                    "tertiary": "#723521",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bec9c5",
+                    "surface-tint": "#006b5e",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#ffcebf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "md": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            },
+            "boxShadow": {
+                "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { min-height: 100dvh; }
+        .tap-highlight-none { -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface pb-28">
+<!-- TopAppBar (from COMPONENTS_27) -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-ambient flex justify-between items-center px-4 h-16">
+<button class="text-emerald-900 dark:text-emerald-50 hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="font-manrope font-black tracking-tighter text-emerald-900 dark:text-emerald-50 text-2xl">Shoppa</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-secondary-container border border-outline-variant">
+<img alt="User profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbatNRJc5jGNqx3kZ_ILkf3dCE-sSgwttztTZeVtDpp4nyhg1SjVUhHxk8laoXYDaQo1NPAdeIPLaoMlO65G52K6WkA66q-vKLYMatA1YUo1fsyrD17ty_KJGgGl9UNFVa4nVFlLSxc1W4gVxtfV7i1y5qU2kbHE89HjdSlLNpkKli-1aRHSzs6tHBaY2D-OXMYI-n1aWzpcnJn81xfoZeqD5W4cWKtg_H9hV2K8GTpC0UKs7QKdKOQOeEDP4aBLxZDT9wSMiIhicY"/>
+</div>
+</header>
+<main class="max-w-md mx-auto pt-6 px-6 space-y-8">
+<!-- Profile Header -->
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-20 h-20 rounded-2xl overflow-hidden bg-secondary-container">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbatNRJc5jGNqx3kZ_ILkf3dCE-sSgwttztTZeVtDpp4nyhg1SjVUhHxk8laoXYDaQo1NPAdeIPLaoMlO65G52K6WkA66q-vKLYMatA1YUo1fsyrD17ty_KJGgGl9UNFVa4nVFlLSxc1W4gVxtfV7i1y5qU2kbHE89HjdSlLNpkKli-1aRHSzs6tHBaY2D-OXMYI-n1aWzpcnJn81xfoZeqD5W4cWKtg_H9hV2K8GTpC0UKs7QKdKOQOeEDP4aBLxZDT9wSMiIhicY"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 bg-emerald-500 border-2 border-surface rounded-full"></div>
+</div>
+<div class="space-y-0.5">
+<h1 class="text-2xl font-headline font-extrabold text-on-surface">Alex River</h1>
+<p class="text-on-surface-variant text-sm font-medium">Professional Shopper • Top Rated</p>
+</div>
+</div>
+<!-- Quick Stats Hub -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low rounded-xl p-4 space-y-2 cursor-pointer active:scale-95 transition-transform" onclick="location.href='#analytics'">
+<span class="material-symbols-outlined text-primary">bar_chart</span>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase">Earnings</p>
+<p class="text-lg font-black text-on-surface">$1,420.50</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 space-y-2 cursor-pointer active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-secondary">star_half</span>
+<div>
+<p class="text-[10px] font-bold text-outline uppercase">Rating</p>
+<p class="text-lg font-black text-on-surface">4.95 <span class="text-xs font-medium text-outline">(128)</span></p>
+</div>
+</div>
+</div>
+<!-- Menu Hub Section -->
+<section class="space-y-4">
+<h3 class="px-2 text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Shopper Management</h3>
+<div class="bg-surface-container-lowest rounded-2xl shadow-ambient overflow-hidden border border-surface-variant">
+<!-- Analytics -->
+<a class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Dashboard &amp; Analytics</p>
+<p class="text-xs text-outline font-medium">Performance insights and earnings</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<div class="h-px bg-surface-variant mx-4"></div>
+<!-- Price List -->
+<a class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Price Management</p>
+<p class="text-xs text-outline font-medium">Update service fees and markup</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<div class="h-px bg-surface-variant mx-4"></div>
+<!-- Availability Settings -->
+<a class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center text-on-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">event_available</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Availability Settings</p>
+<p class="text-xs text-outline font-medium">Manage hours and session capacity</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Business Growth -->
+<section class="space-y-4">
+<h3 class="px-2 text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant">Grow Your Business</h3>
+<div class="bg-surface-container-lowest rounded-2xl shadow-ambient overflow-hidden border border-surface-variant">
+<!-- Referral Links -->
+<a class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center text-on-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share_reviews</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Referral &amp; Invite Links</p>
+<p class="text-xs text-outline font-medium">Invite clients for $0 commission</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<div class="h-px bg-surface-variant mx-4"></div>
+<!-- Shopping Categories -->
+<a class="flex items-center gap-4 p-4 hover:bg-surface-container-low transition-colors group" href="#">
+<div class="w-10 h-10 bg-primary-container rounded-lg flex items-center justify-center text-on-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">category</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-sm">Shopping Categories</p>
+<div class="flex flex-wrap gap-1 mt-1">
+<span class="px-2 py-0.5 bg-surface-container text-[9px] font-bold rounded-full text-outline">Groceries</span>
+<span class="px-2 py-0.5 bg-surface-container text-[9px] font-bold rounded-full text-outline">Furniture</span>
+<span class="px-2 py-0.5 bg-surface-container text-[9px] font-bold rounded-full text-outline">+2 more</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Operational State Toggle (Moved to bottom of hub) -->
+<section class="bg-primary/5 rounded-2xl p-6 border-2 border-primary/20 flex items-center justify-between">
+<div class="space-y-1">
+<h2 class="text-lg font-headline font-bold text-primary">Shopper Mode</h2>
+<p class="text-xs text-on-surface-variant font-medium">Accepting new local orders</p>
+</div>
+<button class="relative inline-flex h-8 w-14 items-center rounded-full bg-primary transition-colors focus:outline-none">
+<span class="translate-x-7 inline-block h-6 w-6 transform rounded-full bg-white shadow-sm transition-transform"></span>
+</button>
+</section>
+<!-- Logout -->
+<button class="w-full py-4 text-error font-headline font-bold text-sm hover:bg-error-container/20 rounded-xl transition-colors">
+        Log out of Shoppa
+    </button>
+</main>
+<!-- BottomNavBar (from COMPONENTS_27) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-4 pt-2 bg-slate-100/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-ambient rounded-t-[1.5rem]">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-white/50 dark:hover:bg-slate-800/50 tap-highlight-none active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-white/50 dark:hover:bg-slate-800/50 tap-highlight-none active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Shopping</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-white/50 dark:hover:bg-slate-800/50 tap-highlight-none active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">people</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1.5 hover:bg-white/50 dark:hover:bg-slate-800/50 tap-highlight-none active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Data</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-white dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 rounded-xl px-3 py-1.5 tap-highlight-none active:scale-90 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-inter text-[10px] font-semibold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

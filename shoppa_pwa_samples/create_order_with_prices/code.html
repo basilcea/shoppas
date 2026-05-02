@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d9dadb",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface": "#191c1d",
+                    "outline": "#6e7976",
+                    "on-secondary-fixed": "#01201b",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-fixed": "#c9e9e1",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#4b6862",
+                    "on-primary-container": "#95e8d8",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#e7e8e9",
+                    "primary": "#005147",
+                    "on-tertiary-fixed": "#390b00",
+                    "on-secondary-fixed-variant": "#2f4c46",
+                    "primary-container": "#006b5e",
+                    "on-primary-fixed": "#00201b",
+                    "inverse-primary": "#83d5c5",
+                    "primary-fixed": "#9ff2e1",
+                    "surface-bright": "#f8f9fa",
+                    "tertiary-fixed-dim": "#ffb59e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#3e4946",
+                    "on-primary-fixed-variant": "#005046",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "primary-fixed-dim": "#83d5c5",
+                    "surface": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#c6e7de",
+                    "on-background": "#191c1d",
+                    "tertiary-container": "#8f4c36",
+                    "tertiary-fixed": "#ffdbd0",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#723521",
+                    "secondary": "#46645e",
+                    "secondary-fixed-dim": "#adcdc5",
+                    "tertiary": "#723521",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bec9c5",
+                    "surface-tint": "#006b5e",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#ffcebf"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            },
+            "boxShadow": {
+                "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-40">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-md mx-auto">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-emerald-900">arrow_back</span>
+</button>
+<h1 class="font-manrope font-bold text-lg text-emerald-900 tracking-tight">New Order</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="Profile" data-alt="Close up professional headshot of a friendly man with a neat beard and soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4hHkjL-1l1NGoOene_uXuFiDTYYvCbpTiUxKSKnirAsRXcZlHuGg_1_BffzS1uo8i1JseKh-wP9bECVBMYEnEQPlAY5S6ma2JIMv4EWivfy_ifM_nBbZYv_MXy3-OOxvvma1rW8c2hEC5u7hEoxCr4wcjMlhC9MeuZr8EgAZHrYdir4kYRbj6YYAU-naRu-Br7rNB5Wsx0LtlcCtgLxRtfSrHp07wvG2KhZuVaOzG0efRHL3ZmwljVV9Tt_SX_SLYMzXmvx2GIzrE"/>
+</div>
+</div>
+</header>
+<main class="pt-20 px-4 max-w-md mx-auto space-y-6">
+<!-- Progress Indicator -->
+<section class="bg-surface-container-low p-4 rounded-2xl">
+<div class="flex justify-between items-center mb-3 px-1">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Item Entry</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Step 1 of 3</span>
+</div>
+<div class="flex gap-2 h-1.5 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full w-1/3 bg-primary rounded-full"></div>
+<div class="h-full w-0 bg-primary-container/30 rounded-full"></div>
+<div class="h-full w-0 bg-primary-container/30 rounded-full"></div>
+</div>
+</section>
+<!-- Status Sheet -->
+<div class="bg-secondary-container/40 p-4 rounded-xl flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="text-sm font-medium text-on-secondary-container leading-snug">Choose your preferred way to add items to this order.</p>
+</div>
+<!-- Multi-modal Entry Grid (Bento Style) -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Manual Entry -->
+<button class="col-span-2 bg-surface-container-lowest p-6 rounded-3xl shadow-ambient flex items-center justify-between hover:bg-slate-50 transition-colors active:scale-[0.98] duration-200">
+<div class="text-left">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-2xl mb-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+<h3 class="font-bold text-lg text-emerald-900 leading-tight">Add Item<br/>Manually</h3>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<!-- Paste List -->
+<button class="bg-surface-container-lowest p-5 rounded-3xl shadow-ambient text-left hover:bg-slate-50 transition-colors active:scale-[0.98] duration-200">
+<div class="w-10 h-10 bg-secondary-fixed flex items-center justify-center rounded-xl mb-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">content_paste</span>
+</div>
+<h3 class="font-bold text-base text-emerald-900 leading-tight">Paste<br/>List</h3>
+<p class="text-[10px] mt-1 text-slate-500 uppercase font-bold tracking-tighter">Bulk Import</p>
+</button>
+<!-- Upload Image -->
+<button class="bg-surface-container-lowest p-5 rounded-3xl shadow-ambient text-left hover:bg-slate-50 transition-colors active:scale-[0.98] duration-200">
+<div class="w-10 h-10 bg-tertiary-fixed flex items-center justify-center rounded-xl mb-3">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">add_a_photo</span>
+</div>
+<h3 class="font-bold text-base text-emerald-900 leading-tight">Upload<br/>Screenshot</h3>
+<p class="text-[10px] mt-1 text-slate-500 uppercase font-bold tracking-tighter">AI Vision</p>
+</button>
+</div>
+<!-- Recent/Quick Add Section -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-manrope font-extrabold text-xl text-emerald-900">Frequently Ordered</h2>
+<button class="text-primary font-semibold text-sm">View All</button>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-2 space-y-2">
+<!-- Item Card 1 -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl overflow-hidden bg-surface-variant flex-shrink-0">
+<img alt="Bananas" data-alt="Fresh vibrant bunch of bananas on a neutral clean surface with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpMZ9ktSGco89_oyD5ZopSjQuVrpT0tddmo582RsZD_bEP_j0w0C31oQds-5iTRX1a8WUaYT_3cULrkQphbaAPcYLiBveYUeV6rNe6J_gUaUarGeu3XBNp95u7lSuz-ZZC_CyjsCI8Fcyl0jSE7cStu9K5q3vn_gORsqhX62aRLSGMFCqxPlTx0BLL9inCDqxlRiI61nOV997kv2N54jVFL-P0lSOQL_vopXz3LOjNXww6SKMwOJBGvspdV4V5s68uOK3kAVNiK2gP"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-sm text-emerald-900">Organic Bananas</h4>
+<p class="text-xs text-slate-500">Produce • $0.89/lb</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-emerald-50 text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex gap-2 items-center">
+<div class="relative flex-grow">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">$</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-2 pl-6 pr-3 text-xs placeholder:text-slate-400 focus:ring-1 focus:ring-primary/20" placeholder="Suggested Price (Optional)" type="number"/>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-xl px-2">
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-xs font-bold w-6 text-center text-emerald-900">1</span>
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+</div>
+</div>
+<!-- Item Card 2 -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl overflow-hidden bg-surface-variant flex-shrink-0">
+<img alt="Milk" data-alt="Glass bottle of fresh whole milk with condensation on a white background with bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtGTltLhcYDDDTws-fT7Qxf8zukWz37SvyZk0Ary4QvtkVi7HoHAqPwfNv-ZRmS7dbGRG19c8tIndoYscT09EAqvQNn2CToJxy1K7cxp5XM105aE0vgC7xwmgESak019NyQWqpcOhK9wlnjpiKnxVLa1GfJIoyWt3mz8rxLwIKtsZ3hZwpM4ivuQzA4qkXDXc9O1IlunBf0sKhNhveRebtfSDDS5oYH03sF2IgjK3mZ06vAmHF-gjAX3ZADWI7lCvUe-t2vkchEUTu"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-sm text-emerald-900">Whole Milk, 1 Gal</h4>
+<p class="text-xs text-slate-500">Dairy • $4.20</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-emerald-50 text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex gap-2 items-center">
+<div class="relative flex-grow">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">$</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-2 pl-6 pr-3 text-xs placeholder:text-slate-400 focus:ring-1 focus:ring-primary/20" placeholder="Suggested Price (Optional)" type="number"/>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-xl px-2">
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-xs font-bold w-6 text-center text-emerald-900">1</span>
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+</div>
+</div>
+<!-- Item Card 3 -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl overflow-hidden bg-surface-variant flex-shrink-0">
+<img alt="Sourdough" data-alt="Artisan sourdough loaf on a wooden board with flour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqb05QBxfAaaMcX250-GU9wsTp0neXrr8hHNI1aYCFQqlIUP14E3ZVKn4uPQz0WyTjVDA2DxJNdhkKyTixdsbgZNZtKqiU3tm9XodmOHueLdYn5MsR4ruGjfv5JH-9fgTZPoLWB-Yl3eHQUSUY5MKvvmYborRlJZ4bysMjN_RpGUJcwx5VtALl-p3VdCOz8Fkm9l6-lEnyFouE_v9sk-jiaZ25gIozyzcVE6c4PGveZwjwwZABDD6NgROpM0l6Ln0G3kkmW6hEnHUz"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-sm text-emerald-900">Artisan Sourdough</h4>
+<p class="text-xs text-slate-500">Bakery • $6.50</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-emerald-50 text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="flex gap-2 items-center">
+<div class="relative flex-grow">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-bold">$</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-2 pl-6 pr-3 text-xs placeholder:text-slate-400 focus:ring-1 focus:ring-primary/20" placeholder="Suggested Price (Optional)" type="number"/>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-xl px-2">
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="text-xs font-bold w-6 text-center text-emerald-900">1</span>
+<button class="w-6 h-8 flex items-center justify-center text-slate-500"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Footer Action -->
+<footer class="fixed bottom-0 left-0 w-full bg-slate-50 dark:bg-slate-900 rounded-t-3xl shadow-[0_-10px_40px_rgba(25,28,29,0.08)] z-40 p-6">
+<div class="max-w-md mx-auto flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Items in Cart</span>
+<span class="font-manrope font-extrabold text-2xl text-emerald-900">12 items</span>
+</div>
+<button class="flex-grow h-14 rounded-2xl bg-gradient-to-r from-primary to-primary-container text-white font-manrope font-bold text-lg shadow-lg active:scale-95 duration-200 flex items-center justify-center gap-2">
+                Continue Order
+                <span class="material-symbols-outlined text-xl">trending_flat</span>
+</button>
+</div>
+</footer>
+</body></html>

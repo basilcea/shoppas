@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shoppa Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary": "#723521",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#4b6862",
+                        "surface-container": "#edeeef",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#46645e",
+                        "secondary-fixed": "#c9e9e1",
+                        "primary": "#005147",
+                        "outline-variant": "#bec9c5",
+                        "surface-tint": "#006b5e",
+                        "on-background": "#191c1d",
+                        "secondary-fixed-dim": "#adcdc5",
+                        "on-primary-fixed": "#00201b",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#8f4c36",
+                        "primary-fixed-dim": "#83d5c5",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-surface": "#191c1d",
+                        "primary-container": "#006b5e",
+                        "outline": "#6e7976",
+                        "background": "#f8f9fa",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed": "#390b00",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#01201b",
+                        "surface": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed-variant": "#723521",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-container": "#c6e7de",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-container": "#95e8d8",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#ffcebf",
+                        "on-primary-fixed-variant": "#005046",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3e4946",
+                        "primary-fixed": "#9ff2e1",
+                        "on-secondary-fixed-variant": "#2f4c46",
+                        "inverse-primary": "#83d5c5",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shadow-ambient {
+            box-shadow: 0 20px 40px rgba(25, 28, 29, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased mb-24 md:mb-0 md:pt-16">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-between items-center px-6 py-3">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-emerald-900 dark:text-emerald-500 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+                menu
+            </button>
+<h1 class="text-xl font-extrabold text-emerald-900 dark:text-emerald-400 tracking-tighter">Shoppa</h1>
+</div>
+<div class="flex items-center gap-2">
+<!-- Navigation Links for Desktop -->
+<nav class="hidden md:flex gap-8 mr-8">
+<a class="text-emerald-900 dark:text-emerald-400 font-bold font-manrope text-lg tracking-tight" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 transition-colors font-manrope text-lg tracking-tight" href="#">Shopping</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 transition-colors font-manrope text-lg tracking-tight" href="#">Clients</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 transition-colors font-manrope text-lg tracking-tight" href="#">Chat</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 transition-colors font-manrope text-lg tracking-tight" href="#">Profile</a>
+</nav>
+<button class="material-symbols-outlined text-emerald-900 dark:text-emerald-500 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+                lock
+            </button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-12">
+<!-- Status Sheet: Signature Component -->
+<div class="mb-8 p-4 rounded-xl bg-tertiary-container/10 border-l-4 border-tertiary-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container">info</span>
+<span class="font-medium text-on-surface-variant">4 active sessions require your attention</span>
+</div>
+<button class="text-tertiary-container font-bold text-sm uppercase tracking-widest px-4 py-2 hover:bg-tertiary-container/5 rounded-lg transition-colors">
+                View All
+            </button>
+</div>
+<!-- Dashboard Hero Section -->
+<header class="mb-10">
+<h2 class="text-display-sm font-headline font-extrabold text-on-surface tracking-tight text-4xl mb-2">Welcome back, Active Shopper</h2>
+<p class="text-on-surface-variant font-medium">Shoppa Gold Member • v2.4.0</p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Active Sessions Card -->
+<section class="md:col-span-8 bg-surface-container-low p-6 rounded-[1.5rem]">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-headline font-bold text-emerald-900">Active Sessions</h3>
+<span class="bg-emerald-100 text-emerald-900 text-xs font-bold px-3 py-1 rounded-full">LIVE</span>
+</div>
+<div class="space-y-4">
+<!-- Session Item 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 shadow-ambient">
+<img alt="Client 1" class="w-14 h-14 rounded-full object-cover" data-alt="Close-up portrait of a professional woman with a warm smile in a brightly lit modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEIgdYou-pe0KNzkQi5cnZ1NXdb1w9xQK6TQLWcKEj5qF39B3UAJCcSDFZqHL3_To_KnV73yDDWPV24OK1IObTmKxskwRgaHaB9AvKT9CdqB7sRpmAbTJ9d2-2pJhntYfo3k1OCtiduNY349QRauSvZoOv8vxMcb99e9jVhVvANFoeWojTfGdasNQUE3lrR6vLx3CTL8Qbd-ReRPILG7uMAdRBJQc4fhfvL2P_KHP-usMS_GLLayS_e7-ykEnNhsKUrBQdJuyOxabj"/>
+<div class="flex-1">
+<h4 class="font-headline font-bold text-on-surface">Elena Rodriguez</h4>
+<p class="text-sm text-on-surface-variant">Whole Foods Market • 4 items left</p>
+</div>
+<div class="text-right">
+<button class="bg-emerald-900 text-on-primary px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all">Resume</button>
+</div>
+</div>
+<!-- Session Item 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 shadow-ambient">
+<img alt="Client 2" class="w-14 h-14 rounded-full object-cover" data-alt="Portrait of a young man with glasses and a beard looking at a digital tablet with soft window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZwEY_JZyH1dK9bg4aAALfZCJ-SPVU7EUaYcL_BoIqyDeqvtJL043RE_XJsesGgZA047Yxwj3YElreOhdZKs_YFPeHc_iLlqI2CeEH63ip9cC_gFVok0eCmvmokcL8_WduTdrIiX5v38z24xoSPQJ-QSUSewM1N58VbtWd-SRAMQwfx9JFRDIrsHxprNXrHEiODx87tPHhPrpPpQLfEsJ2X2L3axWhf9zBVFDAWwqx0dh4fbFEcdv812ip4Q33-U4peHJhaddjidG1"/>
+<div class="flex-1">
+<h4 class="font-headline font-bold text-on-surface">Marcus Chen</h4>
+<p class="text-sm text-on-surface-variant">Target Express • Checkout Pending</p>
+</div>
+<div class="text-right">
+<button class="bg-emerald-900 text-on-primary px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all">Go to Checkout</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stats Bento Item -->
+<section class="md:col-span-4 bg-primary text-on-primary p-6 rounded-[1.5rem] flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="text-lg font-headline font-bold opacity-80 mb-1">Today's Earnings</h3>
+<p class="text-4xl font-headline font-black">$248.50</p>
+</div>
+<div class="relative z-10 pt-8">
+<div class="flex justify-between text-sm opacity-80 mb-2">
+<span>Daily Goal</span>
+<span>80%</span>
+</div>
+<div class="h-2 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed w-[80%] rounded-full"></div>
+</div>
+</div>
+<!-- Background decorative element -->
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined !text-[120px]">payments</span>
+</div>
+</section>
+<!-- Today's Orders (Asymmetric Detail) -->
+<section class="md:col-span-12 bg-surface-container-low p-6 rounded-[1.5rem]">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-2xl font-headline font-bold text-on-surface">Today's Orders</h3>
+<div class="flex gap-2">
+<span class="px-4 py-1.5 bg-surface-container-lowest text-emerald-900 rounded-full text-sm font-bold shadow-sm">All</span>
+<span class="px-4 py-1.5 text-on-surface-variant text-sm font-medium">Pending</span>
+<span class="px-4 py-1.5 text-on-surface-variant text-sm font-medium">Completed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Order Card 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1rem] shadow-ambient border-t-4 border-emerald-900/10">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-emerald-50 text-emerald-900 rounded-lg">
+<span class="material-symbols-outlined">shopping_basket</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Order #2940</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-1">Organic Produce Box</h4>
+<p class="text-sm text-on-surface-variant mb-4">12 Items • Priority Delivery</p>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="font-bold text-emerald-900">$42.00</span>
+<span class="text-xs text-on-surface-variant">Due in 45m</span>
+</div>
+</div>
+<!-- Order Card 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1rem] shadow-ambient border-t-4 border-emerald-900/10">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-emerald-50 text-emerald-900 rounded-lg">
+<span class="material-symbols-outlined">local_pharmacy</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Order #2941</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-1">Pharmacy Pickup</h4>
+<p class="text-sm text-on-surface-variant mb-4">3 Items • Fragile</p>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="font-bold text-emerald-900">$18.20</span>
+<span class="text-xs text-on-surface-variant">Due in 1h 15m</span>
+</div>
+</div>
+<!-- Order Card 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-[1rem] shadow-ambient border-t-4 border-emerald-900/10">
+<div class="flex justify-between items-start mb-4">
+<div class="p-2 bg-emerald-50 text-emerald-900 rounded-lg">
+<span class="material-symbols-outlined">pets</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Order #2942</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-1">Pet Supplies</h4>
+<p class="text-sm text-on-surface-variant mb-4">1 Item • Bulk (20kg)</p>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="font-bold text-emerald-900">$65.99</span>
+<span class="text-xs text-on-surface-variant">Due in 2h</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-slate-50 dark:bg-slate-950 rounded-t-[1.5rem] shadow-ambient">
+<!-- Active Tab: Home -->
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/30 text-emerald-900 dark:text-emerald-300 rounded-[0.75rem] px-5 py-1.5 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-500 px-5 py-1.5 hover:text-emerald-700 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Shopping</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-500 px-5 py-1.5 hover:text-emerald-700 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-500 px-5 py-1.5 hover:text-emerald-700 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-500 px-5 py-1.5 hover:text-emerald-700 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-semibold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shoppa | Forgot Password</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-error-container": "#93000a",
+                "surface-container-high": "#e7e8e9",
+                "secondary-fixed-dim": "#adcdc5",
+                "surface-dim": "#d9dadb",
+                "surface-container": "#edeeef",
+                "on-tertiary-fixed": "#390b00",
+                "surface-container-low": "#f3f4f5",
+                "secondary-container": "#c6e7de",
+                "tertiary": "#723521",
+                "tertiary-container": "#8f4c36",
+                "surface-container-highest": "#e1e3e4",
+                "on-primary": "#ffffff",
+                "surface-variant": "#e1e3e4",
+                "background": "#f8f9fa",
+                "inverse-on-surface": "#f0f1f2",
+                "on-tertiary": "#ffffff",
+                "inverse-surface": "#2e3132",
+                "on-surface": "#191c1d",
+                "on-primary-fixed": "#00201b",
+                "on-primary-container": "#95e8d8",
+                "secondary": "#46645e",
+                "on-secondary-fixed": "#01201b",
+                "on-tertiary-fixed-variant": "#723521",
+                "on-background": "#191c1d",
+                "on-tertiary-container": "#ffcebf",
+                "tertiary-fixed": "#ffdbd0",
+                "on-secondary-container": "#4b6862",
+                "primary-container": "#006b5e",
+                "tertiary-fixed-dim": "#ffb59e",
+                "outline": "#6e7976",
+                "on-surface-variant": "#3e4946",
+                "primary": "#005147",
+                "surface-tint": "#006b5e",
+                "inverse-primary": "#83d5c5",
+                "primary-fixed": "#9ff2e1",
+                "secondary-fixed": "#c9e9e1",
+                "primary-fixed-dim": "#83d5c5",
+                "error": "#ba1a1a",
+                "on-secondary-fixed-variant": "#2f4c46",
+                "surface-bright": "#f8f9fa",
+                "surface-container-lowest": "#ffffff",
+                "outline-variant": "#bec9c5",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#005046",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "surface": "#f8f9fa"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "2xl": "1.5rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            },
+            "boxShadow": {
+                "ambient": "0 20px 40px rgba(25, 28, 29, 0.06)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .headline-font {
+            font-family: 'Manrope', sans-serif;
+        }
+        .glass-header {
+            background: rgba(248, 249, 250, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #005147 0%, #006b5e 100%);
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid #005147;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Status Sheet (Non-intrusive notification) -->
+<div class="fixed top-0 left-0 w-full z-[60] py-2 px-4 bg-tertiary-container/10 backdrop-blur-sm text-center">
+<p class="text-[11px] font-label font-semibold tracking-widest text-tertiary uppercase">Secure Encryption Enabled</p>
+</div>
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center px-6 py-12">
+<div class="w-full max-w-md">
+<!-- Branding & Header Section -->
+<div class="text-center mb-10">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-fixed mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="lock_reset">lock_reset</span>
+</div>
+<h1 class="headline-font font-extrabold text-3xl text-primary tracking-tight mb-3">Forgot Password?</h1>
+<p class="text-on-surface-variant font-body text-base px-4">
+                    Enter the email address associated with your account and we'll send a secure link to reset your password.
+                </p>
+</div>
+<!-- Form Section -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 shadow-ambient">
+<form class="space-y-8">
+<!-- Email Input Group -->
+<div class="space-y-2">
+<label class="block text-xs font-label font-bold text-outline uppercase tracking-wider ml-1" for="email">
+                            Email Address
+                        </label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline group-focus-within:text-primary transition-colors" data-icon="mail">mail</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-highest border-none rounded-xl text-on-surface placeholder:text-outline/50 transition-all" id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+</div>
+<!-- Action Button -->
+<button class="primary-gradient w-full h-14 rounded-2xl text-on-primary font-headline font-bold text-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-lg shadow-primary/20" type="submit">
+                        Send Reset Link
+                        <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Footer Links -->
+<div class="mt-10 text-center flex flex-col items-center gap-6">
+<a class="group flex items-center gap-2 text-on-surface font-headline font-bold hover:text-primary transition-colors" href="/login">
+<span class="material-symbols-outlined text-xl group-hover:-translate-x-1 transition-transform" data-icon="chevron_left">chevron_left</span>
+                    Back to Login
+                </a>
+<div class="pt-8 border-t border-outline-variant/30 w-full">
+<p class="text-on-surface-variant text-sm font-body">
+                        Don't have an account yet? 
+                        <a class="text-primary font-bold hover:underline underline-offset-4 ml-1" href="/signup">Create Account</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Visual Background Element (Subtle) -->
+<div class="fixed -bottom-24 -left-24 w-64 h-64 rounded-full bg-primary-fixed/20 blur-[80px] -z-10"></div>
+<div class="fixed -top-24 -right-24 w-80 h-80 rounded-full bg-secondary-container/30 blur-[100px] -z-10"></div>
+<!-- Contextual Support Text -->
+<footer class="py-8 text-center">
+<div class="flex items-center justify-center gap-6 opacity-40 grayscale">
+<img class="h-4" data-alt="minimalist professional visa card logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_X0X0jNHl7m88jiCn8czo5Ry-VT06C-h9QKZKFu2yn1VqUCU5gyIif1xDVgDGgLePDcERj59FEtFNXdp2owdWvhEGbIE9t7lK4FFZoqWkHa47YpRGfG2CVpbyaiUMLGbulFYdeKGFsJuw8Fwx8Fgd7GZgLcSeoZyZGjzlkSq43T85S9cSRC95rt_5e2MhdygSfkwr6HCCE7dx36MtCNKRmQWRri4S1q9JbZr5QaYY1n1Ft6CNBA0HshkpYR94Az2m1uEw17Ss8NE4"/>
+<img class="h-6" data-alt="minimalist professional mastercard logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUj1v9RHXhnetzpryCl3iaJd2vzSI-N-zodOrNgg6JpSUd23Tifx1BzquRuAQWJQUtoLRGN_frsVnaQre4Qc9QOMP-4L435G4ILKmUG72HNg8E4VmRcvKqnZkptWjEfaRda_RemPvlLBGpxJgoB3OPZGxEHyKVoB2etnuZurmKwwQRwzTPx5uRbbUENfSbgjM-p0joUcR2cow4NRy22Kat1xPqMrMzQ0iKCFdYpCzRc-u1LwTGWeEpjiq9yYJubNMdEqNMn2woK6c3"/>
+<img class="h-5" data-alt="pci dss compliance certification logo in minimalist monochrome style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT-uOU94nsKWbK2_ubms8O6eoBEQR_ncXHlK8Yto9SprjQulnZsvLRsCkIuAJQ-sg-T5d8oTvDyz89IukKRf0eGHUKziB_nJSnlU3DP77IPh8Vt6wEIN6X-WfJAJBu-p_jKrV1aWpbeSdpeX9HWZV1GfqYLTRpoMPbpxOcRC2hNJIcjvVShfAXsmvrApFqz1VanWFvLEPZcmSql-5MWBywkXyhRLz53ZvzVPjNzsfTiSeAssTAK97Z5MdjobkOVSjOk_KrZYSa8ksp"/>
+</div>
+<p class="text-[10px] text-outline font-label uppercase tracking-widest mt-6">
+            © 2024 Shoppa Inc. • Secured by Enterprise Guard
+        </p>
+</footer>
+</body></html>
