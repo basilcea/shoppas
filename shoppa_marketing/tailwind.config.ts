@@ -4,9 +4,9 @@ import containerQueries from '@tailwindcss/container-queries'
 
 export default {
   content: [
-    './app/**/*.{ts,tsx}',
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
+    './app/**/*.ts,tsx',
+    './pages/**/*.ts,tsx',
+    './components/**/*.ts,tsx',
     './styles/**/*.{css}',
   ],
   darkMode: 'class',
