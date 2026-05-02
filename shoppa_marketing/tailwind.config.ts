@@ -7,7 +7,7 @@ export default {
     './app/**/*.ts,tsx',
     './pages/**/*.ts,tsx',
     './components/**/*.ts,tsx',
-    './styles/**/*.{css}',
+    './styles/**/*.css',
   ],
   darkMode: 'class',
   theme: {
