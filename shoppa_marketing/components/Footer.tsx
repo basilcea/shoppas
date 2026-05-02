@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="text-lg font-bold text-emerald-900 font-headline"><Link href="/">Shoppas</Link></div>
         <p className="font-body text-sm text-slate-500">© 2026 Shoppas. All rights reserved.</p>
         <div className="flex gap-6 font-body text-sm">
-          <Link className="text-slate-500 hover:text-emerald-600 transition-opacity underline" href="/privacy">Privacy Policy</Link>
+          <Link className="text-slate-500 hover:text-emerald-600 transition-opacity" href="/privacy">Privacy Policy</Link>
           <Link className="text-slate-500 hover:text-emerald-600 transition-opacity" href="/terms">Terms of Service</Link>
         </div>
       </div>
