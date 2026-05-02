@@ -6,7 +6,7 @@ export default function Features() {
         <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-on-surface tracking-tight mb-8 leading-[1.1]">Platform <span className="text-primary">Features</span></h1>
         <p className="max-w-2xl mx-auto text-on-surface-variant text-lg md:text-xl font-body leading-relaxed mb-12">The Operating Platform for Personal Shoppers. Everything you need to scale your business, manage clients, and optimize your fulfillment flow.</p>
         <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-ambient bg-surface-container-low group">
-          <img alt="Professional dashboard interface" className="w-full h-full object-contain" src="/features/dashboard.png" />
+          <img alt="Professional dashboard interface" className="w-full h-full object-stretch" src="/features/dashboard.png" />
           <div className="absolute inset-0 bg-primary/10 transition-opacity group-hover:opacity-0" />
         </div>
       </section>

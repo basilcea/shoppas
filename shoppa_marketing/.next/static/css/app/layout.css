@@ -2093,9 +2093,6 @@ input:where([type='file']):focus {
 .duration-300 {
   transition-duration: 300ms;
 }
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 :root {
   --shadow-ambient: 0 20px 40px rgba(25, 28, 29, 0.06);
@@ -2221,6 +2218,10 @@ input:where([type='file']):focus {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -2243,6 +2244,10 @@ input:where([type='file']):focus {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {

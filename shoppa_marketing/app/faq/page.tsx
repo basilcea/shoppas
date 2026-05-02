@@ -15,7 +15,7 @@ export default function FAQ() {
       variant: 'primary',
       content: (
         <p>
-          A Shop Session is a dedicated time window where your personal shopper is exclusively focused on shopping to meet clients' order. Unlike standard delivery services, Shop Sessions can be active, real-time collaborations or offline depending on network availability. You'll receive a notification when your shopper starts, and they will communicate directly with you from the shop via our app.
+          A shop session is a dedicated time window where your personal shopper is exclusively focused on shopping to meet clients' order. Unlike standard delivery services, shop sessions can be active, real-time collaborations or offline depending on network availability. You'll receive a notification when your shopper starts, and they will communicate directly with you from the shop via our app.
         </p>
       )
     },
@@ -24,8 +24,8 @@ export default function FAQ() {
       icon: 'sync_alt',
       content: (
         <p>
-          An Order Session is a dedicated time window where the personal shopper is actively collecting and preparing orders for the next shopping run.
-          Each Order Session is designed to run efficiently and fairly, with a limited number of available spots and a set timeframe. Once either limit is reached—maximum accepted clients or time expired—the session automatically closes to ensure every order is handled with care and attention.
+          An order session is a dedicated time window where the personal shopper is actively collecting and preparing orders for the next shopping run.
+          Each order session is designed to run efficiently and fairly, with a limited number of available spots and a set timeframe. Once either limit is reached—maximum accepted clients or time expired—the session automatically closes to ensure every order is handled with care and attention.
         </p>
       )
     },
@@ -35,7 +35,7 @@ export default function FAQ() {
       variant: 'tertiary',
       content: (
         <>
-          <p className="mb-4">Substitutions are handled in real-time through the ShopOps digital concierge. If an item is out of stock, your shopper will:</p>
+          <p className="mb-4">Substitutions are handled in real-time through the Shoppas digital concierge. If an item is out of stock, your shopper will:</p>
           <ul className="space-y-3">
             <li className="flex items-center gap-3 text-on-surface-variant">
               <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
@@ -79,12 +79,11 @@ export default function FAQ() {
       title: 'Is there a mobile app?',
       icon: 'install_mobile',
       content: (
-        <div className="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-primary shadow-sm">
-          <p className="font-semibold mb-2">We use PWA technology (Progressive Web App).</p>
-          <p className="text-on-surface-variant text-sm leading-relaxed">
+
+          <p className="text-on-surface-variant leading-relaxed">
             Instead of downloading from an app store, you can "Add to Home Screen" directly from your browser. This gives you a full-screen experience with push notifications and offline access.
           </p>
-        </div>
+
       )
     }
   ]

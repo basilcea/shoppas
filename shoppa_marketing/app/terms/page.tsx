@@ -8,7 +8,7 @@ export default function Terms() {
             <span className="text-xs font-semibold tracking-wider uppercase font-label">Legal Framework</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 tracking-tight">Terms of Service</h1>
-          <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Last Updated: June 14, 2024. Please read these terms carefully before using the Shoppas marketplace platform.</p>
+          <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Last Updated: May 2, 2026. Please read these terms carefully before using the Shoppas marketplace platform.</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">

@@ -41,15 +41,15 @@ export default function Privacy() {
                   <h3 className="text-xl font-bold mb-3">Ephemeral Storage</h3>
                   <p className="text-sm text-on-surface-variant leading-relaxed">Product photos and real-time cart updates are stored temporarily during your session and archived after delivery completion to maintain your privacy while keeping your order history intact.</p>
                 </div>
-                <div className="w-full md:w-1/2"><img alt="Shopping Session Detail" className="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNv93TiX3uikzSqA09--ejLrYKR71y3obhVZv2-HjLm1-k19Y_p5h5Bg0KU2pjIaKtpyP1QDhdj-p8wq1k8IKRIOts0-jwB-i63zZ4PTlSka8rrTVwlINGK9fWy4TP7G5JebfqWAlrEUzndMWS2KuF1E2GzV-A1wIfvL-ucmuOcC_n4_8o1mu66GgtqaoE5orecv93ItV7LqlvMuonw6kGMiSPSMvFiXddTPoj_0Xian3yXKTpV-pCLtpRoGy7soabNdBocyrhtcw" /></div>
+                {/* <div className="w-full md:w-1/2"><img alt="Shopping Session Detail" className="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNv93TiX3uikzSqA09--ejLrYKR71y3obhVZv2-HjLm1-k19Y_p5h5Bg0KU2pjIaKtpyP1QDhdj-p8wq1k8IKRIOts0-jwB-i63zZ4PTlSka8rrTVwlINGK9fWy4TP7G5JebfqWAlrEUzndMWS2KuF1E2GzV-A1wIfvL-ucmuOcC_n4_8o1mu66GgtqaoE5orecv93ItV7LqlvMuonw6kGMiSPSMvFiXddTPoj_0Xian3yXKTpV-pCLtpRoGy7soabNdBocyrhtcw" /></div> */}
               </div>
             </div>
           </section>
 
           <section id="location-tracking" className="scroll-mt-32">
             <div className="flex items-center gap-3 mb-6"><span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: '"FILL" 1' }}>location_on</span><h2 className="text-3xl font-bold">Location Tracking</h2></div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="md:col-span-2 bg-surface-container-low p-8 rounded-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className=" md:col-span-2 bg-surface-container-low p-8 rounded-xl">
                 <h3 className="text-xl font-bold mb-4">Precision Logistics</h3>
                 <p className="text-on-surface-variant leading-relaxed mb-6">To ensure seamless hand-offs, we access your device location only when a delivery is in progress. This allows our shoppers to provide accurate ETAs and find your specific drop-off point without delay.</p>
                 <ul className="space-y-3">
@@ -58,10 +58,10 @@ export default function Privacy() {
                   <li className="flex gap-2 text-sm text-on-surface-variant"><span className="material-symbols-outlined text-primary text-base">check_circle</span>Location history is purged after 30 days.</li>
                 </ul>
               </div>
-              <div className="bg-surface-container-highest rounded-xl overflow-hidden relative min-h-[250px]">
+              {/* <div className="bg-surface-container-highest rounded-xl overflow-hidden relative min-h-[250px]">
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary/5 to-secondary/5" />
                 <div className="relative z-10 p-6 flex flex-col h-full justify-end"><span className="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary w-fit mb-2">LIVE TRACKING</span><p className="text-xs text-on-surface-variant font-medium">Encrypted end-to-end</p></div>
-              </div>
+              </div> */}
             </div>
           </section>
 
