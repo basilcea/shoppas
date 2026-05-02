@@ -1,10 +1,15 @@
+import { text } from "stream/consumers";
+
 export default function Privacy() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <header className="mb-16">
+       <div className="max-w-4xl mx-auto pt-16 pb-20">
+     <header className="mb-16  ">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-4 text-primary">Privacy Policy</h1>
         <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Last updated: May 2, 2026. At Shopass, we believe your data belongs to you. This policy outlines how we protect your information while providing a premium shopping experience.</p>
       </header>
+       </div>
+ 
       <div className="flex flex-col lg:flex-row gap-12">
         <aside className="lg:w-64 flex-shrink-0">
           <div className="sticky top-28 space-y-2">

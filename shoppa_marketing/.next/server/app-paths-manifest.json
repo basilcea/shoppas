@@ -1,6 +1,7 @@
 {
+  "/privacy/page": "app/privacy/page.js",
+  "/page": "app/page.js",
   "/terms/page": "app/terms/page.js",
-  "/faqs/page": "app/faqs/page.js",
   "/features/page": "app/features/page.js",
-  "/page": "app/page.js"
+  "/faqs/page": "app/faqs/page.js"
 }
