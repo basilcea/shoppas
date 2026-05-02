@@ -91,7 +91,9 @@ export default function FAQ() {
   return (
     <div>
       {/* HERO SECTION (unchanged) */}
-      <section className="px-6 mb-12">
+       
+      <section className="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h1 className="font-headline font-extrabold text-5xl md:text-6xl py-10 text-on-surface tracking-tight mb-8 leading-[1.1]">Frequently Asked <span className="text-primary">Questions</span></h1>
         <div className="max-w-4xl mx-auto text-center py-16 px-8 rounded-xxl hero-gradient text-on-primary shadow-xl relative overflow-hidden">
           <div className="relative z-10">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
