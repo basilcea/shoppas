@@ -23,7 +23,7 @@ export default function LandingHero() {
             </button> */}
           </div>
         </div>
-        <div className="relative min-h-[420px] md:min-h-[560px] perspective-1200">
+        <div className="hidden md:block relative min-h-[420px] md:min-h-[560px] perspective-1200">
           <div className="h-full w-full flex items-center justify-center preserve-3d">
             {/* Phone frame container - 3D */}
             <div className="relative w-full max-w-[380px] aspect-[9/19] rounded-[2rem] phone-frame-3d phone-tilt">
