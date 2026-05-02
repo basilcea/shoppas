@@ -58,10 +58,6 @@ export default function Privacy() {
                   <li className="flex gap-2 text-sm text-on-surface-variant"><span className="material-symbols-outlined text-primary text-base">check_circle</span>Location history is purged after 30 days.</li>
                 </ul>
               </div>
-              {/* <div className="bg-surface-container-highest rounded-xl overflow-hidden relative min-h-[250px]">
-                <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-primary/5 to-secondary/5" />
-                <div className="relative z-10 p-6 flex flex-col h-full justify-end"><span className="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary w-fit mb-2">LIVE TRACKING</span><p className="text-xs text-on-surface-variant font-medium">Encrypted end-to-end</p></div>
-              </div> */}
             </div>
           </section>
 
@@ -81,12 +77,10 @@ export default function Privacy() {
             <section id="your-rights" className="scroll-mt-32">
               <h2 className="text-2xl font-bold mb-4">Your Rights</h2>
               <p className="text-on-surface-variant text-sm leading-relaxed mb-4">You have the right to access, rectify, or delete your personal data at any time. We comply with GDPR and CCPA standards to ensure global data sovereignty for our users.</p>
-              <button className="text-primary font-bold text-sm flex items-center gap-2 hover:underline">Request Data Export <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
             </section>
             <section id="contact" className="scroll-mt-32">
               <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
               <p className="text-on-surface-variant text-sm leading-relaxed mb-4">Have questions about your privacy? Our dedicated legal and security team is here to help clarify any concerns.</p>
-              <a className="text-primary font-bold text-sm hover:underline" href="mailto:privacy@shopops.com">privacy@shoppas.io</a>
             </section>
           </div>
         </div>
