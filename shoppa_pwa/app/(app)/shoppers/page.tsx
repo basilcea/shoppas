@@ -1,6 +1,6 @@
 'use client'
 
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
@@ -12,6 +12,33 @@ const categories = [
   { label: 'Electronics', icon: '', active: false },
   { label: 'Fashion', icon: '', active: false },
   { label: 'Pharmacy', icon: '', active: false },
+]
+
+const mockShoppers = [
+  {
+    id: '1',
+    name: 'Marcus Chen',
+    specialty: 'Electronics Specialist',
+    rating: 4.9,
+    avatar: null,
+    status: 'open' as const,
+  },
+  {
+    id: '2',
+    name: 'Elena Rodriguez',
+    specialty: 'Grocery Expert',
+    rating: 4.8,
+    avatar: null,
+    status: 'closing-soon' as const,
+  },
+  {
+    id: '3',
+    name: 'Samir Gupta',
+    specialty: 'Premium Fashion',
+    rating: 5.0,
+    avatar: null,
+    status: 'open' as const,
+  },
 ]
 
 export default function FindShoppersPage() {

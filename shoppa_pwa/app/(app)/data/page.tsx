@@ -1,14 +1,12 @@
 'use client'
 
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Card } from '@/components/ui/Card'
 
 export default function DataPage() {
   return (
     <AuthenticatedLayout>
       <h1 className="text-2xl font-headline font-bold text-on-surface mb-4">Analytics</h1>
-
-      <div className="space-y-6 pb-6">
 
       <div className="space-y-6 pb-6">
         {/* Earnings Overview */}

@@ -7,17 +7,16 @@ export default function Home() {
       <section className="flex-1 flex items-center justify-center px-6 py-12">
         <div className="text-center max-w-md">
           <div className="mb-6">
-            <span className="material-symbols-outlined text-6xl text-primary mb-4">shopping_cart</span>
             <h1 className="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight mb-4">
-              Shoppa
+              Shoppas
             </h1>
             <p className="text-lg text-on-surface-variant font-medium mb-6">
-              Professional shopping operations simplified. Manage orders, track deliveries, and grow your business.
+              Professional shopping operations simplified. Manage orders, track shopping, and grow your personal shopper business.
             </p>
           </div>
           <div className="space-y-3">
             <Link href="/login">
-              <button className="w-full h-14 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold text-lg rounded-xl shadow-ambient active:scale-95 transition-transform flex items-center justify-center gap-2">
+              <button className="w-full mb-6 h-14 bg-gradient-to-r from-primary to-primary-container text-white font-headline font-bold text-lg rounded-xl shadow-ambient active:scale-95 transition-transform flex items-center justify-center gap-2">
                 Get Started
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
@@ -59,7 +58,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-6 px-6 text-center text-sm text-on-surface-variant">
-        <p>© 2026 Shoppa. Built with operational excellence.</p>
+        <p>© 2026 Shoppas. Built with operational excellence by  <Link href="https://datamore.ai" target="_blank" rel="noopener noreferrer"> Datamore </Link></p>
       </footer>
     </main>
   )

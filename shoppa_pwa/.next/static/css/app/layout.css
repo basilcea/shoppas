@@ -915,6 +915,9 @@ input:where([type='file']):focus {
 .mt-16 {
   margin-top: 4rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .block {
   display: block;
 }

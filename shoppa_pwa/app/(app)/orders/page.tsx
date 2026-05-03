@@ -1,6 +1,6 @@
 'use client'
 
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
@@ -18,13 +18,22 @@ export default function MyOrdersPage() {
     itemsRemaining: 12,
   }
 
+  const pastOrders = [
+    { id: '2', title: 'Fresh Produce & Bakery', date: 'MAY 12', status: 'Delivered', items: 14, total: 52.20 },
+    { id: '3', title: 'Household Essentials', date: 'MAY 08', status: 'Delivered', items: 8, total: 89.00 },
+  ]
+
+  const deliveringOrder = {
+    id: '4',
+    title: 'Organic Selection',
+    status: 'ON THE WAY',
+    arrival: '15m',
+    items: 6,
+  }
+
   return (
     <AuthenticatedLayout>
       <h1 className="text-2xl font-headline font-bold text-on-surface mb-4">Active Orders</h1>
-      <Header
-        title="Active Orders"
-        subtitle="Manage your ongoing shopping sessions"
-      />
 
       {/* Active Order Card */}
       <Card className="mb-6 space-y-4">
@@ -60,8 +69,8 @@ export default function MyOrdersPage() {
 
       {/* Order History */}
       <section className="space-y-4 pb-6">
-        <div className="flex justify-between items-center">
-          <h2 className="font-headline font-bold text-xl text-on-surface">Recent Activity</h2>
+        <div className="flex items-center justify-between">
+          <h2 className="font-headline font-extrabold text-xl text-on-surface">Recent Activity</h2>
           <button className="text-primary text-sm font-bold">View all</button>
         </div>
 

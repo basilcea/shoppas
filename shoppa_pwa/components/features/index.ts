@@ -1,2 +1,2 @@
 export { SessionProvider } from './SessionProvider'
-export { AuthenticatedLayout } from './AuthenticatedLayout'
+export { default as AuthenticatedLayout } from './AuthenticatedLayout'

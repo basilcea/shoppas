@@ -1,6 +1,6 @@
 'use client'
 
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Card } from '@/components/ui/Card'
 import { ListItem } from '@/components/ui/ListItem'
 
@@ -14,9 +14,6 @@ export default function ClientsPage() {
   return (
     <AuthenticatedLayout>
       <h1 className="text-2xl font-headline font-bold text-on-surface mb-4">Clients</h1>
-
-      <div className="space-y-4 pb-6">
-        <p className="text-on-surface-variant text-sm">Your regular clients and their order history.</p>
 
       <div className="space-y-4 pb-6">
         <p className="text-on-surface-variant text-sm">Your regular clients and their order history.</p>

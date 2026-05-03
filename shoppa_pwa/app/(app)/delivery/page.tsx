@@ -1,6 +1,6 @@
 'use client'
 
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Header } from '@/components/ui/Header'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
