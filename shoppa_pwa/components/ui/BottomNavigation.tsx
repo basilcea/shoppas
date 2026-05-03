@@ -19,7 +19,8 @@ export function BottomNavigation({ items, activePath }: BottomNavigationProps) {
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-highest backdrop-blur-lg border-t border-surface-variant/30">
       <div className="flex items-center justify-around h-16 max-w-lg mx-auto">
         {items.map((item) => {
-          const isActive = activePath === item.href
+          // Check if current path starts with the item href for nested routes
+          const isActive = activePath?.startsWith(item.href)
           return (
             <Link
               key={item.href}
