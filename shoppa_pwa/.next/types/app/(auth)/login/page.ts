@@ -1,8 +1,8 @@
 // File: /Users/mrcea/Desktop/cea/HouseOfCea/datamore/shoppa/shoppa_pwa/app/(auth)/login/page.tsx
-import * as entry from '../../../../../app/(auth)/login/page.js'
+import * as entry from '../../../../../app/auth/login/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/(auth)/login/page.js')
+type TEntry = typeof import('../../../../../app/auth/login/page.jsx')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
