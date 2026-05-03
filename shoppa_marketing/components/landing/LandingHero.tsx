@@ -1,4 +1,4 @@
-import { handleInstallClick } from "../../utils/installHandler";
+import DownloadButton from "@/components/DownloadButton";
 
 export default function LandingHero() {
   return (
@@ -12,13 +12,7 @@ export default function LandingHero() {
             Scale your shopping business with a high precision tool designed for the modern concierge. Run smarter sessions, optimize routes, and delight clients.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
-            <button onClick={() => handleInstallClick("https://shoppas-app.vercel.app/download")} className="btn-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-ambient flex items-center gap-2 group">
-              Download App
-              <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-            </button>
-            {/* <button className="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-variant transition-colors">
-              View Demo
-            </button> */}
+            <DownloadButton />
           </div>
         </div>
         <div className="hidden md:block relative min-h-[420px] md:min-h-[560px] perspective-1200">

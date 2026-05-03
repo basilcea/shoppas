@@ -1,0 +1,1 @@
+{'registered': ", registration)\n    })\n    .catch((error) => {\n      console.log('SW registration failed:"}

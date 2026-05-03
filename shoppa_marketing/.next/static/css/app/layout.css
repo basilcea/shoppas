@@ -1268,20 +1268,11 @@ input:where([type='file']):focus {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .block {
   display: block;
 }
 .flex {
   display: flex;
-}
-.inline-flex {
-  display: inline-flex;
 }
 .grid {
   display: grid;
@@ -1366,10 +1357,6 @@ input:where([type='file']):focus {
 }
 .w-\[2px\] {
   width: 2px;
-}
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .w-full {
   width: 100%;
@@ -1648,10 +1635,6 @@ input:where([type='file']):focus {
   --tw-bg-opacity: 1;
   background-color: rgb(231 232 233 / var(--tw-bg-opacity, 1));
 }
-.bg-surface-container-highest {
-  --tw-bg-opacity: 1;
-  background-color: rgb(225 227 228 / var(--tw-bg-opacity, 1));
-}
 .bg-surface-container-low {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 245 / var(--tw-bg-opacity, 1));
@@ -1686,6 +1669,10 @@ input:where([type='file']):focus {
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
 }
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 100 94 / var(--tw-bg-opacity, 1));
+}
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1704,14 +1691,6 @@ input:where([type='file']):focus {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 .p-0 {
   padding: 0px;
@@ -1775,10 +1754,6 @@ input:where([type='file']):focus {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1834,9 +1809,6 @@ input:where([type='file']):focus {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pt-5 {
-  padding-top: 1.25rem;
 }
 .text-left {
   text-align: left;
@@ -1997,6 +1969,10 @@ input:where([type='file']):focus {
   --tw-text-opacity: 1;
   color: rgb(114 53 33 / var(--tw-text-opacity, 1));
 }
+.text-on-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -2119,10 +2095,6 @@ input:where([type='file']):focus {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 245 / var(--tw-bg-opacity, 1));
 }
-.hover\:bg-surface-variant:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(225 227 228 / var(--tw-bg-opacity, 1));
-}
 .hover\:text-emerald-600:hover {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity, 1));
@@ -2144,15 +2116,6 @@ input:where([type='file']):focus {
 .focus\:ring-primary-container:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(0 107 94 / var(--tw-ring-opacity, 1));
-}
-.active\:scale-95:active {
-  --tw-scale-x: .95;
-  --tw-scale-y: .95;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group:hover .group-hover\:translate-x-1 {
-  --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:opacity-0 {
   opacity: 0;
