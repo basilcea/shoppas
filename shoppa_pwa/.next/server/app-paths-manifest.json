@@ -1,3 +1,18 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auth/forgot-password/page": "app/auth/forgot-password/page.js",
+  "/auth/signup/page": "app/auth/signup/page.js",
+  "/page": "app/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/(app)/dashboard/page": "app/(app)/dashboard/page.js",
+  "/(app)/orders/page": "app/(app)/orders/page.js",
+  "/(app)/clients/page": "app/(app)/clients/page.js",
+  "/(app)/orders/create/page": "app/(app)/orders/create/page.js",
+  "/(app)/orders/[id]/page": "app/(app)/orders/[id]/page.js",
+  "/(app)/profile/page": "app/(app)/profile/page.js",
+  "/(app)/settings/availability/page": "app/(app)/settings/availability/page.js",
+  "/(app)/delivery/page": "app/(app)/delivery/page.js",
+  "/(app)/shoppers/page": "app/(app)/shoppers/page.js",
+  "/(app)/settings/price-list/page": "app/(app)/settings/price-list/page.js",
+  "/(app)/data/page": "app/(app)/data/page.js"
 }
