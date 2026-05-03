@@ -1,3 +1,4 @@
+import { handleInstallClick } from "../../utils/installHandler";
 export default function Features() {
   return (
     <main className="pt-0">
@@ -105,7 +106,7 @@ export default function Features() {
       <p className="text-on-surface-variant mb-10">
         Join the network of personal shoppers using Shoppas to run smarter shopping and increase their margins.
         </p>
-      <button className="btn-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-ambient inline-flex w-fit group">
+       <button  onClick={() => handleInstallClick("https://shoppas-app.vercel.app/download")} className="btn-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-ambient inline-flex w-fit group">
         Download App
       </button>
       </div>
