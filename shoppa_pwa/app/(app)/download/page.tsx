@@ -105,16 +105,16 @@ export default function DownloadPage() {
             {isInstallable && (
               <Card className="mb-6">
                 <div className="text-center py-4">
-                  <Button
-                    variant="primary"
-                    size="xl"
-                    fullWidth
-                    icon="get_app"
-                    onClick={handleInstallClick}
-                    className="mb-4"
-                  >
-                    Install Shoppa
-                  </Button>
+                   <Button
+                     variant="primary"
+                     size="xl"
+                     fullWidth
+                     icon="get_app"
+                     onClick={handleInstallClick}
+                     className="mb-4"
+                   >
+                     Download
+                   </Button>
                   <p className="text-sm text-on-surface-variant">Tap to install the app on your device</p>
                 </div>
               </Card>
