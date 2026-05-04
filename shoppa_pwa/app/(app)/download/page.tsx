@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { AuthenticatedLayout } from '@/components/features/AuthenticatedLayout'
+import AuthenticatedLayout from '@/components/features/AuthenticatedLayout'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 
@@ -13,7 +13,7 @@ export default function DownloadPage() {
 
   useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    if (/iPad|iPhone|iPod/.test(userAgent)) {
       setPlatform('ios')
     } else if (/android/i.test(userAgent)) {
       setPlatform('android')
