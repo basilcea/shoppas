@@ -2,7 +2,7 @@
 
 const handleInstallClick = (): void => {
   alert("You're being redirected to install the app.");
-  window.location.href = "https://shoppas-app.vercel.app/app/download";
+  window.location.href = "https://shoppas-app.vercel.app/download";
 };
 
 export default function DownloadButton() {
