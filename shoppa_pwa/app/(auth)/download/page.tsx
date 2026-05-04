@@ -35,7 +35,6 @@ export default function DownloadPage() {
 
   const handleInstallClick = async () => {
     if (deferredPrompt) {
-      // Android/Desktop Chrome/Edge - use beforeinstallprompt
       deferredPrompt.prompt()
       const { outcome } = await deferredPrompt.userChoice
       if (outcome === 'accepted') {
@@ -43,9 +42,6 @@ export default function DownloadPage() {
       }
       setDeferredPrompt(null)
     } else if (platform === 'ios') {
-      // iOS - show instructions since we can't auto-prompt
-      // Users need to manually use the Share button
-      // We'll highlight the instructions
       const instructions = document.querySelector('.install-instructions')
       if (instructions) {
         instructions.scrollIntoView({ behavior: 'smooth' })
@@ -85,6 +81,9 @@ export default function DownloadPage() {
       <UnauthenticatedLayout>
         <div className="max-w-lg mx-auto px-4 py-8">
           <div className="text-center mb-12">
+            <div className="w-24 h-24 bg-primary-container/20 rounded-3xl flex items-center justify-center mx-auto mb-6">
+              <span className="material-symbols-outlined text-5xl text-primary">download</span>
+            </div>
             <h1 className="text-3xl font-headline font-extrabold text-primary mb-4">
               Install Shoppa
             </h1>
@@ -137,10 +136,10 @@ export default function DownloadPage() {
                 </div>
               </Card>
 
-             <Card className="space-y-4 mb-6 install-instructions">
-               <h3 className="text-lg font-bold text-on-surface mb-4">
-                 {platform === 'ios' ? 'Add to Home Screen' : 'Manual Installation'}
-               </h3>
+              <Card className="space-y-4 mb-6 install-instructions">
+                <h3 className="text-lg font-bold text-on-surface mb-4">
+                  {platform === 'ios' ? 'Add to Home Screen' : 'Manual Installation'}
+                </h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary-fixed/20 rounded-xl flex items-center justify-center flex-shrink-0">

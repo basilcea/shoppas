@@ -6,20 +6,20 @@ export const metadata = {
   description: 'Professional shopping operations simplified. Manage orders, track deliveries, and grow your business.',
   manifest: '/manifest.json',
   themeColor: '#005147',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'default',
-    title: 'Shoppa',
-  },
-  formatDetection: {
-    telephone: false,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#005147',
+} satisfies {
+  width?: string | number
+  initialScale?: number
+  maximumScale?: number
+  userScalable?: boolean
+  themeColor?: string
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -27,12 +27,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <meta name="theme-color" content="#005147" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Shoppa" />
-        <meta name="format-detection" content="telephone=no" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
