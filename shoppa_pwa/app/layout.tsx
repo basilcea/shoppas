@@ -40,15 +40,27 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="bg-surface text-on-surface font-body min-h-screen antialiased">
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js').catch(console.error);
-              }
-            `,
-          }}
-        />
+       <script
+
+  dangerouslySetInnerHTML={{
+
+    __html: `
+
+      if ('serviceWorker' in navigator) {
+
+        navigator.serviceWorker.register('/sw.js')
+
+          .then(reg => console.log('SW registered'))
+
+          .catch(err => console.error('SW registration failed:', err));
+
+      }
+
+    `,
+
+  }}
+
+/>
         {children}
       </body>
     </html>

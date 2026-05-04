@@ -3,19 +3,22 @@ const OFFLINE_URL = '/offline.html'
 
 const PRECACHE_URLS = [
   '/',
-  '/app',
-  '/app/',
-  '/manifest.json',
-  '/offline.html',
+  '/manifest.json'
 ]
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(PRECACHE_URLS)
+    caches.open(CACHE_NAME).then(async (cache) => {
+      try {
+        await cache.addAll(PRECACHE_URLS)
+      } catch (error) {
+        console.error('Precaching failed:', error)
+      }
     })
   )
+
   self.skipWaiting()
+
 })
 
 self.addEventListener('activate', (event) => {
